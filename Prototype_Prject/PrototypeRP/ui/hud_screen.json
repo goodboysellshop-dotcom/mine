@@ -1,0 +1,36 @@
+{
+  "action_bar_text": {
+    "modifications": [
+      {
+        "array_action": "replace",
+        "target_sequence": [ { "name": "action_bar_text" } ],
+        "value": {
+          "type": "panel",
+          "controls": [
+            {
+              "damage_side": {
+                "type": "label",
+                "text": "#text",
+                "anchor_from": "left_middle",
+                "anchor_to": "left_middle",
+                "offset": [15, 0],
+                "bindings": [ { "binding_name": "#action_bar_text", "binding_type": "global", "binding_name_override": "#text" } ]
+              }
+            },
+            {
+              "stats_side": {
+                "type": "label",
+                "text": "#text",
+                "anchor_from": "right_middle",
+                "anchor_to": "right_middle",
+                "offset": [-15, 0],
+                "text_alignment": "right",
+                "bindings": [ { "binding_name": "#action_bar_text", "binding_type": "global", "binding_name_override": "#text" } ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
